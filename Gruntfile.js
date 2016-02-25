@@ -28,7 +28,6 @@ module.exports = function (grunt) {
         },
 
 
-
         /** angular 模板合并  */
         ngtemplates: {
             dipan: {
