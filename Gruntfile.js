@@ -28,7 +28,11 @@ module.exports = function (grunt) {
         },
 
 
+<<<<<<< HEAD
         /** angular 模板合并  冲突测试是 */
+=======
+        /** angular 模板合并  冲突测试2 */
+>>>>>>> origin/master
         ngtemplates: {
             dipan: {
                 cwd: '../../',
