@@ -102,9 +102,7 @@
         $httpProvider.defaults.transformRequest = [function (data) {
             return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
         }];
-
     }
-
     /**
      * 使angular兼容ie7
      * 16/2/1 */

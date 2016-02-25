@@ -9,7 +9,6 @@
 
     angular.module('dipan').directive('areaShow', areaShow);
 
-
     function areaShow() {
         return {
             restrict: 'A',
