@@ -10,10 +10,23 @@ var db = mongoose.connection;
 /* GET home page. */
 router.get('/', function (req, res, next) {
 
-    classModel.save({
-        name:'zhangSan'
-    })
+    /** 存班级  */
+//    var saveClass = new classModel({
+//        name: 'zhangSan'
+//    });
+//
+//    saveClass.save();
 
-    res.json('11');
+    /** 存学生 班级 56d62754c738943d7ae46856   */
+    var saveStudet = new studentModel({
+        studenName: 'ma1',
+        classId: '56d62754c738943d7ae46856'
+    });
+    saveStudet.save();
+
+    studentModel.find(function (err, doc) {
+        res.json(doc);
+    });
+
 });
 module.exports = router;
