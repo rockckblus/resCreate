@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
-var classSchema = new mongoose.Schema(function () {
-    name:String
+var classSchema = new mongoose.Schema({
+    name: String
 });
+
+//var classSchema = {};
 module.exports = classSchema;
