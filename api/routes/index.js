@@ -35,10 +35,14 @@ router.get('/', function (req, res, next) {
 //        classId: '56d64246c23844de03d69c20'
 //    });
 //    saveStudet.save();
+
     oeoeLeftNavModel.find().
-        limit(2).
-        where('pid').equals('54630d68d6c08b12558b45be').
+        where('name').ne('天津').
+        where('type').equals('2').
+        where('pid').equals('54630d5cd6c08bb9138b4638').
+        select('name').
         populate('pid').
+        limit(10).
         exec(function (err, doc) {
             res.json(doc);
         });
